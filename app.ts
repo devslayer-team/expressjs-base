@@ -22,7 +22,7 @@ class App {
   private connectDatabase(): void {
     mongoose
       .connect(
-        `mongodb+srv://${dbConfig.dbUserName}:${dbConfig.dbPassword}@${dbConfig.dbCluster}.7s2w2ls.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+        `mongodb+srv://${dbConfig.dbUserName}:${dbConfig.dbPassword}@${dbConfig.dbCluster}.uhf6i3m.mongodb.net/DevSlayer?retryWrites=true&w=majority`
       )
       .then(() => console.log("Database Connected"))
       .catch((err) => console.log(err));

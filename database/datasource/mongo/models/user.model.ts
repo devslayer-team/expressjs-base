@@ -11,20 +11,6 @@ const UserSchema = new Schema(
   {
     email: { type: String, required: true },
     password: { type: String, required: true },
-    favorite: {
-      type: {
-        charactersList: { type: Array },
-        comicsList: { type: String },
-      },
-      required: false,
-    },
-    userAvatar: {
-      type: {
-        path: { type: String, required: true },
-        extension: { type: String, required: true },
-      },
-      required: true,
-    },
   },
   {
     timestamps: true,
